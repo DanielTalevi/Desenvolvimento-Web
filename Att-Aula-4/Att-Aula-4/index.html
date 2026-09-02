@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<style>
+        /* Reset dos Elementos */
+        *{
+            margin:0;
+            page:0;
+            box-sizing:border-box;
+        }
+        
+        /*Formataçao de Estilo para o corpo do site*/
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(176, 252, 53);
+            color:#0400ff;
+        }
+
+        /*Estilo do Cabeçalho da Pagina*/
+
+        header{
+            background-color: #977400;
+            color: #008d6a;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1{
+            font-size: 24px;
+        }
+
+        header p{
+            font-size: 14px;
+            margin-top: 5px;
+            color: #65019e;
+        }
+
+        /*container principal, que vai envolver o formulario*/
+        main{
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #d6a70c;
+            padding: 25px auto;
+            border: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,1);
+        }
+
+        .campo{
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .botao-redirecionar {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #70c6ff;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+  
+        .botao-redirecionar:hover {
+        background-color: #81b8f3;
+        }
+
+        .centralizar {
+        text-align: center;
+        }
+</Style>
+<body>
+
+    <main>
+        <H1 class="centralizar">Aluguel de Jogos</H1>
+        <br>
+        <div class="centralizar">
+
+            <a href="cadastro.html" class="botao-redirecionar">Cadastre-se</a>
+            <a href="contato.html" class="botao-redirecionar">Contato</a>
+            <a href="sobre.html"class="botao-redirecionar">Sobre</a> 
+        </div>
+        <br>
+        <div>
+            <table border="1">
+                <th>Nome</th>
+                <th>Genero</th>
+                <th>Preço</th>
+                <th><div class="centralizar">Imagem</div></th>
+        <!-- Linha do primeiro Registro -->
+                <tr>
+                    <td>Hollow Knight</td>
+                    <td>Metroidvania</td>
+                    <td>46,99</td>
+                    <td class="centralizar">
+                        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">
+                        <img src="img/hollow knight.PNG" alt="Hollow Knight" width="60%">
+                        </a>
+                    </td>
+                </tr>
+        <!-- Linha do segundo Registro -->
+                <tr>
+                    <td>Cyberpunk 2077</td>
+                    <td>Ação</td>
+                    <td>199,90</td>
+                    <td class="centralizar">
+                        <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">
+                        <img src="img/Cyberpunk2077.PNG" alt="Cyberpunk 2077" width="60%">
+                        </a>
+                    </td>
+                </tr>
+        <!-- Linha do terceiro Registro -->
+                <tr>
+                    <td>Stardew Valley</td>
+                    <td>Simulação</td>
+                    <td>24,99</td>
+                    <td class="centralizar">
+                        <a href="https://store.steampowered.com/app/413150/Stardew_Valley/">
+                            <img src="img/StardewValley.PNG" alt="Stardew Valley" width="60%">
+                        </a>
+                    </td>
+                </tr>
+        <!-- Linha do quarto Registro -->
+                <tr>
+                    <td>Overcooked 2</td>
+                    <td>Cooperativo</td>
+                    <td>59,90</td>
+                    <td class="centralizar">
+                        <a href="https://store.steampowered.com/app/728880/Overcooked_2/">
+                            <img src="img/Overcooked2.PNG" alt="Overcooked 2" width="60%">
+                        </a>
+                    </td>
+                </tr>
+        </table>
+
+        </div>
+
+            
+
+    </main>
+
+    <footer>
+        <p> &copy; 2026 Sistema de Gestao de Clientes, Todos os Direitos Reservados</p>
+        <p>Desenvolvido para fins didaticos</p>
+    </footer>
+</body>
+</html>

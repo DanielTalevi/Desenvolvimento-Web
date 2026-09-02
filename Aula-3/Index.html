@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+
+    <!-- CSS Interno -->
+    <Style>
+        /* Reset dos Elementos */
+        *{
+            margin:0;
+            page:0;
+            box-sizing:border-box;
+        }
+        
+        /*Formataçao de Estilo para o corpo do site*/
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(176, 252, 53);
+            color:#0400ff;
+        }
+
+        /*Estilo do Cabeçalho da Pagina*/
+
+        header{
+            background-color: #977400;
+            color: #008d6a;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1{
+            font-size: 24px;
+        }
+
+        header p{
+            font-size: 14px;
+            margin-top: 5px;
+            color: #65019e;
+        }
+
+        /*container principal, que vai envolver o formulario*/
+        main{
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #d6a70c;
+            padding: 25px auto;
+            border: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,1);
+        }
+
+        .campo{
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .botao-redirecionar {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        border: none;
+        cursor: pointer;
+        }
+  
+        .botao-redirecionar:hover {
+        background-color: #0056b3;
+        }
+                .centralizar {
+        text-align: center;
+        }
+
+    </Style>
+
+</head>
+<body>
+    <header>
+        <p>Modulo de Cadastro de Clientes</p>
+    </header>
+    <main>
+        <h1>Cadastro de Clientes</h1>
+        <!-- Iniciando o Formulario -->
+         <form action="#" method="post" enctype="multipart/form-data">
+            
+            <!-- criando uma div-->
+            
+            <div class="upload-foto">
+                <label for="foto"><Strong>Foto do Cliente</Strong></label>
+                <br><br><br>
+                <input type="file" id="foto" name="foto" accept="imgae/*">
+            </div>
+            
+            <br>
+            
+            <!-- Inserindo dados pessoais -->
+            
+            <div class="campo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+             
+             <br>
+             
+             <!-- Inserindo CPF -->
+            
+             <div class="campo">
+                <label for="cpf">CPF</label>
+                <input type="text" name="CPF" id="cpf" placeholder="000.000.000-00" maxlength="14">  
+            </div>
+
+            <br>
+            
+            <!-- Inserindo Genero -->
+
+            <div class="campo">
+                <label for="genero">Genero</label>
+                <select id="genero" name="genero">
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Femenino</option>
+                    <option value="nao informado">nao desejo informar</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Inserindo E-mail -->
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Exemplo@email.com" required>
+            </div>
+
+            <br>
+
+            <!-- Inserindo Telefone -->
+
+            <div class="campo">
+                <label for="telefone">Numero de Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
+
+            <br>
+
+            <!-- Inserindo Endereço -->
+
+            <div class="campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, Numero e Bairro" required>
+            </div>
+
+            <br>
+
+
+
+            <div class="linha">
+                <div class="campo">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id=""cidade placeholder="Cidade" required>
+                
+                </div>
+
+                <br>
+
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="">selecione</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="campo">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="00000-000" required>
+                </div>
+
+            </div>
+
+            <br>
+
+            <!--OBSERVAÇOEs-->
+
+            <div class="campo">
+                <label for="observacoes">Observaçoes</label>
+                <br>
+                <textarea name="observacoes" id="observacoes" rows="5" placeholder="Informaçoes adicionais do cliente">
+                </textarea>
+            </div>
+
+
+
+            <!-- Botao de Envio -->
+            <div class="centralizar">
+            <input type="submit" value="Cadastrar Cliente" class="btn-enviar">
+            </div>
+        </form>
+
+        <br>
+        <div class="centralizar">
+
+        <a href="index.html" class="botao-redirecionar">inicio</a>
+
+        </div>
+    </main>
+    
+    <!-- Rodape do site -->
+
+    <footer>
+        <p> &copy; 2026 Sistema de Gestao de Clientes, Todos os Direitos Reservados</p>
+        <p>Desenvolvido para fins didaticos</p>
+    </footer>
+
+</body>
+</html>
