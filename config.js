@@ -21,7 +21,7 @@ linhas.forEach((linha) => {
 
     linha.addEventListener("click", () => {
 
-        linha.style.transform = "scale(0.99)";
+        linha.style.transform = "scale(5.99)";
 
         setTimeout(() => {
 
