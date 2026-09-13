@@ -1,110 +1,110 @@
-/*
-        ====================================================
-        ESTILO FOI TUDO IDEIA DO CHAT NÃO SOU BOM COM DESING
-        ====================================================
-*/
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    min-height: 100vh;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background:
-        radial-gradient(circle at top,
-            #183b5c 0%,
-            #08111c 45%,
-            #03070b 100%);
-
-    color: #ffffff;
-
-    padding: 40px 20px;
-}
-
-
-/* =========================
-   CONTAINER
-========================= */
-
-.container {
-    width: min(1000px, 100%);
-    margin: auto;
-}
-
-
-/* =========================
-   CABEÇALHO
-========================= */
-
-.cabecalho {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-
-.subtitulo {
-    color: #70b7ff;
-
-    font-size: 13px;
-
-    font-weight: bold;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 12px;
-}
-
-
-h1 {
-    font-size: clamp(35px, 6vw, 60px);
-
-    margin-bottom: 15px;
-
-    background: linear-gradient(90deg,
-            #ffffff,
-            #95bde6);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.descricao {
-    color: #9daab7;
-
-    font-size: 16px;
-}
-
-
-/* =========================
-   PAINEL
-========================= */
-
-.painel {
-    background: rgba(20, 45, 70, 0.75);
-
-    border: 1px solid rgba(149, 189, 230, 0.25);
-
-    border-radius: 25px;
-
-    padding: 25px;
-
-    box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.45);
-
-    backdrop-filter: blur(10px);
-}
-
-
+/* 
+        ==================================================== 
+        ESTILO FOI TUDO IDEIA DO CHAT NÃO SOU BOM COM DESING 
+        ==================================================== 
+*/ 
+ 
+ 
+ 
+ 
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+ 
+body { 
+    min-height: 100vh; 
+ 
+    font-family: Arial, Helvetica, sans-serif; 
+ 
+    background: 
+        radial-gradient(circle at top, 
+            #183b5c 0%, 
+            #08111c 45%, 
+            #03070b 100%); 
+ 
+    color: #ffffff; 
+ 
+    padding: 40px 20px; 
+} 
+ 
+ 
+/* ========================= 
+   CONTAINER 
+========================= */ 
+ 
+.container { 
+    width: min(1000px, 100%); 
+    margin: auto; 
+} 
+ 
+ 
+/* ========================= 
+   CABEÇALHO 
+========================= */ 
+ 
+.cabecalho { 
+    text-align: center; 
+    margin-bottom: 35px; 
+} 
+ 
+ 
+.subtitulo { 
+    color: #70b7ff; 
+ 
+    font-size: 13px; 
+ 
+    font-weight: bold; 
+ 
+    letter-spacing: 3px; 
+ 
+    margin-bottom: 12px; 
+} 
+ 
+ 
+h1 { 
+    font-size: clamp(35px, 6vw, 60px); 
+ 
+    margin-bottom: 15px; 
+ 
+    background: linear-gradient(90deg, 
+            #ffffff, 
+            #95bde6); 
+ 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+} 
+ 
+ 
+.descricao { 
+    color: #9daab7; 
+ 
+    font-size: 16px; 
+} 
+ 
+ 
+/* ========================= 
+   PAINEL 
+========================= */ 
+ 
+.painel { 
+    background: rgba(20, 45, 70, 0.75); 
+ 
+    border: 1px solid rgba(149, 189, 230, 0.25); 
+ 
+    border-radius: 25px; 
+ 
+    padding: 25px; 
+ 
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.45); 
+ 
+    backdrop-filter: blur(10px); 
+} 
+ 
+ 
 /* =========================
    TOPO DO PAINEL
 ========================= */
@@ -112,18 +112,14 @@ h1 {
 .painel-topo {
     display: flex;
 
-    justify-content: space-between;
+    flex-direction: column;
 
     align-items: center;
 
+    gap: 15px;
+
     margin-bottom: 20px;
 }
-
-
-.painel-topo h2 {
-    font-size: 22px;
-}
-
 
 #contador, #contadorAtividades, #contadorAulas {
     color: #95bde6;
@@ -141,205 +137,288 @@ h1 {
 
 
 /* =========================
-   TABELA
+   TITULO
 ========================= */
 
-.tabela-container {
-    overflow-x: auto;
-}
+.painel-topo h2 {
+    font-size: 22px;
 
+    margin: 0;
 
-table {
-    width: 100%;
-
-    border-collapse: collapse;
-
-    overflow: hidden;
-
-    border-radius: 15px;
-}
-
-
-thead {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-
-th {
-    text-align: left;
-
-    padding: 18px;
-
-    color: #95bde6;
-
-    font-size: 13px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1px;
-}
-
-
-td {
-    padding: 18px;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.07);
-
-    color: #e8edf2;
-}
-
-
-tbody tr {
-    transition: 0.2s;
-}
-
-
-tbody tr:hover {
-    background: rgba(149, 189, 230, 0.08);
-
-    transform: scale(1.005);
+    text-align: center;
 }
 
 
 /* =========================
-   NÚMERO DA AULA
+   CONTROLES
 ========================= */
 
-.numero-aula {
-    display: inline-flex;
+.controles {
+    width: 100%;
 
-    justify-content: center;
+    display: flex;
 
     align-items: center;
 
-    width: 38px;
+    justify-content: center;
 
-    height: 38px;
-
-    margin-right: 10px;
-
-    border-radius: 10px;
-
-    background: #0b1d2d;
-
-    color: #70b7ff;
-
-    font-weight: bold;
+    gap: 20px;
 }
 
 
 /* =========================
-   BOTÕES
+   PESQUISA
 ========================= */
-
-.botao {
-    display: inline-block;
-
-    padding: 10px 16px;
-
-    border-radius: 10px;
-
-    background: #95bde6;
-
-    color: #08111c;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    font-size: 14px;
-
-    transition: 0.2s;
-}
-
-
-.botao:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 20px rgba(149, 189, 230, 0.25);
-
-    background: #ffffff;
-}
-
-
-.atividade {
-    background: #852b01;
-
-    color: white;
-}
-
-
-.atividade:hover {
-    background: #a83a05;
-}
-
-
-/* =========================
-   SEM ATIVIDADE
-========================= */
-
-.sem-atividade {
-    color: #71808e;
-
-    font-size: 14px;
-
-    font-style: italic;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    text-align: center;
-
-    margin-top: 25px;
-
-    color: #536170;
-
-    font-size: 13px;
-}
-
-
-/* =========================
-   CELULAR
-========================= */
-
-@media (max-width: 600px) {
-
-    body {
-        padding: 25px 12px;
-    }
-
-
-    .painel {
-        padding: 15px;
-    }
-
-
-    th,
-    td {
-        padding: 12px;
-    }
-
-
-    .botao {
-        padding: 8px 10px;
-
-        font-size: 12px;
-    }
-
-}
 
 #pesquisaAula {
     width: 300px;
+
     padding: 10px 14px;
-    border: 1px solid #5b5b37;
+
+    border: 1px solid rgba(149, 189, 230, 0.25);
+
     border-radius: 8px;
+
     background-color: #091c15;
+
     color: #c9cfcd;
+
     font-size: 16px;
+
     outline: none;
+
+    transition: 0.2s;
+
+    margin: 0;
+}
+
+
+#pesquisaAula:focus {
+    border-color: #70b7ff;
+
+    box-shadow: 0 0 10px rgba(112, 183, 255, 0.15);
+}
+
+
+/* 
+    DEIXA A PESQUISA ENCOSTADA NA ESQUERDA
+    E OS OUTROS CONTROLES VAO PRA DIREITA
+*/
+
+#pesquisaAula {
+    margin-right: auto;
+}
+
+
+/* ========================= 
+   TABELA 
+========================= */ 
+ 
+.tabela-container { 
+    overflow-x: auto; 
+} 
+ 
+ 
+table { 
+    width: 100%; 
+ 
+    border-collapse: collapse; 
+ 
+    overflow: hidden; 
+ 
+    border-radius: 15px; 
+} 
+ 
+ 
+thead { 
+    background: rgba(0, 0, 0, 0.3); 
+} 
+ 
+ 
+th { 
+    text-align: left; 
+ 
+    padding: 18px; 
+ 
+    color: #95bde6; 
+ 
+    font-size: 13px; 
+ 
+    text-transform: uppercase; 
+ 
+    letter-spacing: 1px; 
+} 
+ 
+ 
+td { 
+    padding: 18px; 
+ 
+    border-top: 1px solid rgba(255, 255, 255, 0.07); 
+ 
+    color: #e8edf2; 
+} 
+ 
+ 
+tbody tr { 
+    transition: 0.2s; 
+} 
+ 
+ 
+tbody tr:hover { 
+    background: rgba(149, 189, 230, 0.08); 
+ 
+    transform: scale(1.005); 
+} 
+ 
+ 
+/* ========================= 
+   NÚMERO DA AULA 
+========================= */ 
+ 
+.numero-aula { 
+    display: inline-flex; 
+ 
+    justify-content: center; 
+ 
+    align-items: center; 
+ 
+    width: 38px; 
+ 
+    height: 38px; 
+ 
+    margin-right: 10px; 
+ 
+    border-radius: 10px; 
+ 
+    background: #0b1d2d; 
+ 
+    color: #70b7ff; 
+ 
+    font-weight: bold; 
+} 
+ 
+ 
+/* ========================= 
+   BOTÕES 
+========================= */ 
+ 
+.botao { 
+    display: inline-block; 
+ 
+    padding: 10px 16px; 
+ 
+    border-radius: 10px; 
+ 
+    background: #95bde6; 
+ 
+    color: #08111c; 
+ 
+    text-decoration: none; 
+ 
+    font-weight: bold; 
+ 
+    font-size: 14px; 
+ 
+    transition: 0.2s; 
+} 
+ 
+ 
+.botao:hover { 
+    transform: translateY(-2px); 
+ 
+    box-shadow: 
+        0 8px 20px rgba(149, 189, 230, 0.25); 
+ 
+    background: #ffffff; 
+} 
+ 
+ 
+.atividade { 
+    background: #852b01; 
+ 
+    color: white; 
+} 
+ 
+ 
+.atividade:hover { 
+    background: #a83a05; 
+} 
+ 
+ 
+/* ========================= 
+   SEM ATIVIDADE 
+========================= */ 
+ 
+.sem-atividade { 
+    color: #71808e; 
+ 
+    font-size: 14px; 
+ 
+    font-style: italic; 
+} 
+ 
+ 
+/* ========================= 
+   FOOTER 
+========================= */ 
+ 
+footer { 
+    text-align: center; 
+ 
+    margin-top: 25px; 
+ 
+    color: #536170; 
+ 
+    font-size: 13px; 
+} 
+ 
+ 
+/* ========================= 
+   CELULAR 
+========================= */ 
+ 
+@media (max-width: 600px) { 
+ 
+    body { 
+        padding: 25px 12px; 
+    } 
+ 
+ 
+    .painel { 
+        padding: 15px; 
+    } 
+
+
+    /* 
+        NO CELULAR OS CONTROLES FICAM UM EMBAIXO DO OUTRO
+    */
+
+    .controles {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    #pesquisaAula {
+        width: 100%;
+
+        margin-right: 0;
+    }
+ 
+ 
+    th, 
+    td { 
+        padding: 12px; 
+    } 
+ 
+ 
+    .botao { 
+        padding: 8px 10px; 
+ 
+        font-size: 12px; 
+    } 
+ 
 }
