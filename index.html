@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Aulas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="cabecalho">
+            <p class="subtitulo">FACULDADE • DESENVOLVIMENTO WEB</p>
+
+            <h1>Documentos de Estudo</h1>
+
+            <p class="descricao">
+                Selecione uma aula para acessar o conteúdo e suas atividades.
+            </p>
+        </header>
+
+
+        <section class="painel">
+
+            <div class="painel-topo">
+                <h2>📚 Aulas</h2>
+
+                <span id="contadorAulas"></span>
+                <span id="contadorAtividades"></span>
+            </div>
+
+
+            <div class="tabela-container">
+
+                <input type="text" id="pesquisaAula" placeholder="Pesquisar aula...">
+                <br>
+                <br>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Aula</th>
+                            <th>Conteúdo</th>
+                            <th>Atividade</th>
+                            <th>Observação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr data-tipo="aula">
+                            <td>
+                                <span class="numero-aula">01</span>
+                                Aula 1
+                            </td>
+
+                            <td>
+                                <a class="botao" href="Aula-1/index.html">
+                                    Abrir aula →
+                                </a>
+                            </td>
+
+                            <td>
+                                <span class="sem-atividade">
+                                    Sem atividades
+                                </span>
+                            </td>
+
+                            <td>
+                                <p>Básico de HTML</p>
+                            </td>
+                        </tr>
+
+
+                        <tr data-tipo="aula atividade">
+                            <td>
+                                <span class="numero-aula">02</span>
+                                Aula 2
+                            </td>
+
+                            <td>
+                                <a class="botao" href="Aula-2/index.html">
+                                    Abrir aula →
+                                </a>
+                            </td>
+
+                            <td>
+                                <a class="botao atividade" href="Att-Aula-2/index.html">
+                                    Atividade →
+                                </a>
+                            </td>
+
+                            <td>
+                                <p>Tabelas em HTML</p>
+                            </td>
+                        
+                        </tr>
+
+
+                        <tr data-tipo="aula">
+                            <td>
+                                <span class="numero-aula">03</span>
+                                Aula 3
+                            </td>
+
+                            <td>
+                                <a class="botao" href="Aula-3/index.html">
+                                    Abrir aula →
+                                </a>
+                            </td>
+
+                            <td>
+                                <span class="sem-atividade">
+                                    Sem atividades
+                                </span>
+                            </td>
+
+                            <td>
+                                <p>Criando uma tela de cadastro (fundamentos de CSS)</p>
+                            </td>
+                        </tr>
+
+
+                        <tr data-tipo="atividade">
+                            <td>
+                                <span class="numero-aula">04</span>
+                                Aula 4
+                            </td>
+
+                            <td>
+                                <span class="sem-atividade">
+                                    Sem conteúdo 
+                                </span>
+                            </td>
+
+                            <td>
+                                <a class="botao atividade" href="Att-Aula-4/index.html">
+                                    Atividade →
+                                </a>
+                            </td>
+
+                            <td>
+                                <p>Atividade prática de HTML e CSS — criação de site.</p>
+                            </td>
+                        </tr>
+
+
+                        <tr data-tipo="aula">
+                            <td>
+                                <span class="numero-aula">05</span>
+                                Aula 5
+                            </td>
+
+                            <td>
+                                <a class="botao" href="Aula-5/index.html">
+                                    Abrir aula →
+                                </a>
+                            </td>
+
+                            <td>
+                                <span class="sem-atividade">
+                                    Sem atividades
+                                </span>
+                            </td>
+
+                            <td>
+                                <p>Aplicação dos estudos de HTML e CSS</p>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            Sistema de Estudos • 2026
+        </footer>
+
+    </main>
+
+    <script src="config.js"></script>
+
+</body>
+
+</html>
