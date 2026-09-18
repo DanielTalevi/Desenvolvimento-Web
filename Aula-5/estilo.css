@@ -183,3 +183,151 @@ nav ul li a:hover {
     border-radius: 16px;
     box-shadow: var(--sombra);
 }
+
+/*  Vamos começar a configuração dos blocos de conteúdo do Catálogo   */
+
+.catalogo{
+    width: 100%;
+    padding: 80px 0 60px 0;
+    
+}
+
+.catalogo h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.catalogo .subtitulo{
+    color: var(--cinza);
+    margin-bottom: 40px;
+}
+
+.barra-busca{
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.buscatexto{
+    flex: 1;
+    height: 52px;
+    border-radius: 100px 0 0 100px;
+    text-indent: 16px;
+    border:1px solid var(--cinza-claro);
+    border-right: none; /* ocultando a borda direita do input */
+    font-size: 15px;
+}
+
+.buscatexto::placeholder{
+    color: var(--cinza);
+    font-size: 15px;
+}
+
+.catalogo .buscabotao{  
+    width: 150px;
+    height: 52px;
+    border: none;
+    border-radius: 0 100px 100px 0;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buscabotao:hover{
+    background-color: var(--vermelho-escuro);
+}
+
+/* Ajustando os Cards */
+
+.gradecatalogo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* agora vamos ajustar o card  separadamente / o quadradinho do carro */
+.card{
+    background-color: var(--branco);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: var(--sombra);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(206, 80, 80);
+}
+
+/* Configurando a div do emoji */
+
+.imagem-card{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.card h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p{
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.card .preco{
+    display: inline-block;
+    font-weight: 700;
+    color: var(--vermelho);
+}
+
+/* Configuração do roda-pé */
+
+footer{
+    width: 100%;
+    background-color: var(--preto);
+    color: var(--cinza-claro);
+    padding: 24px 0;
+}
+
+.rodape-conteudo{
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsividade 
+aqui, em telas que forem menor que 800px,
+o bloco que tem o carro e o texto,
+(lá no cabeçalho) vai deixar de ficar lado a lado
+o texto ficara a cima e a imagem a baixo */
+@media (max-width: 800px){
+    .header-block{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-block .text{
+        max-width: 100%;
+    }
+
+    .header-block .imagem{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    nav ul li:not(:last-child){
+        /* simplificando o menu / ocultado menu */
+        display: none;
+    }
+    
+}
